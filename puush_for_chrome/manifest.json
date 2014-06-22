@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+
+    "name": "Puush for chrome",
+    "version": "0.0.1",
+    "description": "Easily send images to puush.me",
+
+    "update_url": "http://puush.topkek.me/chrome/update.xml",
+
+    "icons": {
+        "128": "img/icon_128.png",
+        "64": "img/icon_64.png",
+        "32": "img/icon_32.png",
+        "19": "img/icon_19.png",
+        "16": "img/icon_16.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "19": "img/icon_19.png",
+            "32": "img/icon_32.png"
+        },
+        "default_title": "Puush for Chrome",
+        "default_popup": "html/popup.html"
+    },
+
+    "permissions": [
+        "tabs",
+        "clipboardWrite",
+        "storage",
+        "contextMenus",
+        "*://puush.me/api/*",
+        "https://*/",
+        "http://*/",
+        "notifications"
+    ],
+
+    "background": {
+        "scripts": ["js/jquery.min.js", "js/md5.js", "js/background.js"],
+        "persistent": true
+    },
+
+    "options_page": "html/options.html",
+
+    "homepage_url": "http://puush.topkek.me/chrome"
+}

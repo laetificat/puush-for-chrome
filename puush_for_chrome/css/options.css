@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    background-image: url('../img/bg.png');
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+.mainBox {
+    width: 800px;
+    background-color: #ebebeb;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position:fixed;
+    left:50%;
+    margin: 0 0 0 -400px;
+    border: 1px solid #d7d7d7;
+    padding: 0 10px 20px 10px;
+}
+
+.loginForm {
+    margin-top: 100px;
+}
+
+.usernameBox, .passwordBox {
+    border-radius: 3px;
+    border: 1px solid #63dcff;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+}
+
+.passwordBox, .submitButton {
+    margin-top: 10px;
+}
+
+.submitButton {
+    width: 250px;
+    height: 25px;
+}
+
+.error {
+    color: red;
+}
+
+.disclaimer {
+    color: #cdcdcd;
+    margin-top: 50px;
+}
+
+.disclaimer a {
+    color: #cdcdcd;
+}
+
+ul li {
+    list-style-type: none;
+}
